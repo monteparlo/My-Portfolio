@@ -1,4 +1,4 @@
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3, p, ul, li, header {
     font-family: Arial, Helvetica, normal;
     color:#ffebee;
     text-align: center;
@@ -9,7 +9,6 @@ body {
     background-image: url("../assets/black-brick.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -27,13 +26,13 @@ h3 {
 }
 
 nav {
-    width: 100%;
     text-align: center;
-    position: sticky;
-    top: 0; 
-    z-index: 3;
-	font-size: 15px;
+    position: absolute;
+    bottom: 1; 
+    z-index: 1;
+	font-size: 13px;
     background-color: #1e0505;
+    width: 100%;
 }
 
 nav ul {
@@ -50,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 10px;
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
@@ -65,15 +64,6 @@ nav ul li a:visited {
     color: rgb(255, 220, 196);
 }
 
-
-main {
-    background-size: cover;
-    padding: 20px;
-    text-align: center;
-    z-index: -5;
-	position: relative;
-}
-
 .box {
     box-sizing: border-box;
     border-color: pink;
@@ -82,6 +72,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 6px;
 }
 
 footer {
@@ -92,6 +83,7 @@ footer {
     color: white;
 	bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
 footer a {
