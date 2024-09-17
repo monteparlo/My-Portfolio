@@ -1,14 +1,29 @@
 body, h1, h2, h3, p, ul, li, header {
     font-family: Arial, Helvetica, normal;
-    color:#ffebee;
-    text-align: center;
+    color: #450000ff;
 }
 
 body {
-    background-color: #170206;
-    background-image: url("../assets/black-brick.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: #ffdedeff;
+    text-align: center;
+}
+
+header img {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+header img:hover {
+    background-image: url("../assets/moonL.png");
+    transition: background-image 0.5s ease-in-out;
+}
+
+main {
+    border: 8px solid #450000ff;
+    border-radius: 15px;
+    width: 300px;
+    display: inline-block; 
 }
 
 h1 {
@@ -24,67 +39,44 @@ h3 {
 }
 
 nav {
-    text-align: center;
-	font-size: 13px;
-    background-color: #1e0505;
-    width: 100%;
+    color: #450000ff;
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    font-size: 18px;
+    z-index: 3;
+    text-align: right !important;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
 	padding: 0;
-	color: white;
-}
-
-nav ul li {
-	display: inline-block; 
-	color: white;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     padding: 15px 10px;
-    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-	color: white;
+	color: #bb6666ff;
+}
+
+nav ul li a:hover {
+    color: #bb6666ff !important;
 }
 
 nav ul li a.active {
-    color: rgb(211, 152, 164) !important;
+    color: #f3b584ff !important;
 }
 
 nav ul li a:visited {
-    color: rgb(255, 220, 196);
-}
-
-.box {
-    box-sizing: border-box;
-    border-color: pink;
-    border: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 6px;
-    display: inline-block; 
-}
-
-.contact {
-    width: auto;
-    height: 57px;
-    background-size: contain; 
-	background-repeat: no-repeat;
-	padding: 10px 40px;
-    text-decoration: none;
-    display: inline-block; 
+    color: rgb(0, 0, 0);
 }
 
 .contact img {
     max-width: 100%;
     height: 57px;
-    display: inline-block; 
 }
 
 .contact:hover {
@@ -93,20 +85,28 @@ nav ul li a:visited {
 
 .contact ul {
     list-style-type: none;
-    display: inline-block;
+    text-decoration: none;
 }
+
 
 footer {
     font-weight: lighter;
     font-size: 10px;
 	padding: 10px;
-	background-color: black;
-    color: white;
+    color: #450000ff;
 	bottom: 0;
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 footer a {
-    color: 	rgb(211, 152, 164); 
+    color: #f3b584ff; 
+}
+
+footer a:hover {
+    color: #bb6666ff !important;
+}
+
+nav ul li a.active:hover {
+    color: #bb6666ff !important;
 }

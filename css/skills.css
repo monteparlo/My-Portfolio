@@ -1,16 +1,22 @@
 body, h1, h2, h3, p, ul, li, header {
     font-family: Arial, Helvetica, normal;
-    color:#ffebee;
-    text-align: center;
+    color: #450000ff;
 }
 
 body {
-    background-color: #170206;
-    background-image: url("../assets/black-brick.jpg");
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
+    background-color: #ffdedeff;
+    text-align: center;
+}
+
+header img {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+header img:hover {
+    background-image: url("../assets/moonL.png");
+    transition: background-image 0.5s ease-in-out;
 }
 
 h1 {
@@ -26,66 +32,71 @@ h3 {
 }
 
 nav {
-    text-align: center;
+    color: #450000ff;
     position: absolute;
-    bottom: 1; 
-    z-index: 1;
-	font-size: 13px;
-    background-color: #1e0505;
-    width: 100%;
+    left: 16px;
+    top: 5px;
+    font-size: 18px;
+    z-index: 3;
+    text-align: right !important;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
 	padding: 0;
-	color: white;
-}
-
-nav ul li {
-	display: inline-block; 
-	color: white;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     padding: 15px 10px;
-    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-	color: white;
+	color: #bb6666ff;
+}
+
+nav ul li a:hover {
+    color: #bb6666ff !important;
 }
 
 nav ul li a.active {
-    color: rgb(211, 152, 164) !important;
+    color: #f3b584ff !important;
 }
 
 nav ul li a:visited {
-    color: rgb(255, 220, 196);
+    color: rgb(0, 0, 0);
 }
 
-.box {
-    box-sizing: border-box;
-    border-color: pink;
-    border: 15px;
-    display: flex;
+nav ul li a.active:hover {
+    color: #bb6666ff !important;
+}
+
+div {
+    width: 500px;
+    border: 8px solid #450000ff;
+    padding: 50px;
+    margin: 20px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 6px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 15px;
 }
 
 footer {
     font-weight: lighter;
     font-size: 10px;
 	padding: 10px;
-	background-color: black;
-    color: white;
+    color: #450000ff;
 	bottom: 0;
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 footer a {
-    color: 	rgb(211, 152, 164); 
+    color: #f3b584ff; 
+}
+
+footer a:hover {
+    color: #bb6666ff !important;
 }
