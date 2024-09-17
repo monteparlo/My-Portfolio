@@ -79,13 +79,27 @@ nav ul li a:visited {
     height: 57px;
 }
 
+.contact img:hover {
+    filter: invert(100%);
+}
+
 .contact:hover {
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 .contact ul {
     list-style-type: none;
     text-decoration: none;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #bb6666ff !important;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color: #f3b584ff;
 }
 
 
